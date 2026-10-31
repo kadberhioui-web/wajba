@@ -112,6 +112,11 @@
 <button id="add" data-i="add"></button>
 <p id="amsg" class="msg"></p>
 <p class="msg" id="total"></p>
+<h2 style="margin-top:18px" data-i="bulkTitle"></h2>
+<p class="msg" data-i="bulkHelp"></p>
+<textarea id="bulkin" dir="auto"></textarea>
+<button id="bulkbtn" data-i="bulkBtn"></button>
+<p id="bulkmsg" class="msg"></p>
 </div></details>
 <details class="acc"><summary data-i="stuTitle"></summary><div class="accbody">
 <ul id="slist"></ul>
@@ -125,17 +130,20 @@
 </section>
 
 <section id="alogin" class="card" hidden>
-<label for="pw" data-i="pwLabel"></label>
-<input id="pw" type="password" autocomplete="off">
+<label for="aemail" data-i="emailLabel"></label>
+<input id="aemail" type="email" autocomplete="username" dir="ltr">
+<label for="pw" style="margin-top:10px" data-i="pwLabel"></label>
+<input id="pw" type="password" autocomplete="current-password">
 <button id="aenter" data-i="enter"></button>
 <button id="aback" class="ghost" data-i="back"></button>
+<button id="forgot" class="link" data-i="forgot"></button>
 <p id="pmsg" class="msg err" role="alert"></p>
 </section>
 
 <button id="tadmin" class="link" data-i="adminLink"></button>
 </main>
 
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
 
